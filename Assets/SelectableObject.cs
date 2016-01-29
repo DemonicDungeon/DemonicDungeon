@@ -13,7 +13,6 @@ public class SelectableObject : MonoBehaviour {
     }
 
     public void Unselect() {
-        Debug.Log("UNSELECT");
         renderer.material = originalMaterial;
     }
 
