@@ -2,8 +2,6 @@
 using System.Collections;
 
 public class CauldronIngredient : MonoBehaviour {
-
-
 	private DialogSystem dialog;
 
 	void Interact() {

@@ -42,7 +42,7 @@ public class GameState {
         Water,
         Fire
     }
-    public enum Ingridients {
+    public enum Ingridients { // NB must be same as object names in Kitchen scene
         Ananas,
         Bone,
         Pill,
