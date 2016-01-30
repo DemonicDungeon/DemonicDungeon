@@ -13,7 +13,7 @@ public class KitchenScript : MonoBehaviour {
 	}
 
 	public void Intro() {
-		dialog.ShowText ("Oh, looks like I tried to cook something. Should finish this thing, probably");
+		dialog.ShowText ("Oh, looks like I tried to cook something. I wonder, if I used all the necessary ingredients.");
 	}
 	
 	// Update is called once per frame
