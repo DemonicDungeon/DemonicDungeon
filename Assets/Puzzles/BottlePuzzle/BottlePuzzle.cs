@@ -2,12 +2,9 @@
 using System.Collections;
 
 public class BottlePuzzle : MonoBehaviour {
-
-   
-
     private RoomScript room;
 
-    public int BottleCount = 0;
+    private int BottleCount = 0;
 
     public void PickedUpBottle() {
         BottleCount++;
@@ -15,7 +12,6 @@ public class BottlePuzzle : MonoBehaviour {
             room.GoToNextLevel();
     }
 
-	// Use this for initialization
 	void Start () {
         room = FindObjectOfType<RoomScript>();
 	}
