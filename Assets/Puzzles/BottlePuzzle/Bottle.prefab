@@ -88,6 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1b5483e460a0984d812a5673de7c8cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzle: {fileID: 0}
 --- !u!114 &11493414
 MonoBehaviour:
   m_ObjectHideFlags: 1
