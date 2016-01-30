@@ -3,6 +3,8 @@ using System.Collections;
 
 public class BottlePuzzle : MonoBehaviour {
 
+   
+
     private RoomScript room;
 
     public int BottleCount = 0;
@@ -10,11 +12,11 @@ public class BottlePuzzle : MonoBehaviour {
     public void PickedUpBottle() {
         BottleCount++;
         if (BottleCount == 3)
-            room.Win();
+            room.GoToNextLevel();
     }
 
 	// Use this for initialization
 	void Start () {
-        room = GetComponent<RoomScript>();
+        room = FindObjectOfType<RoomScript>();
 	}
 }

@@ -5,8 +5,14 @@ using System.Collections;
 public class RoomScript : MonoBehaviour {
 
     public string NextRoom;
+
+    private Animator animator;
     
-    public void Win() {
+    public void GoToNextLevel() {
+        animator.SetTrigger("NextLevel");
+    }
+
+    public void LoadNextLevel() {
         SceneManager.LoadScene(NextRoom);
     }
 
@@ -16,6 +22,6 @@ public class RoomScript : MonoBehaviour {
     
     // Use this for initialization
     void Start () {
-	
+        animator = FindObjectOfType<Animator>();
 	}
 }
