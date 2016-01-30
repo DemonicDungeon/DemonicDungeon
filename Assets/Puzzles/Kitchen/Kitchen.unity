@@ -596,6 +596,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd6b1af211db4820a1f738b522ab52b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  red_cauldron: {fileID: 2100000, guid: d11b5ff9def9e40d5b23fb4fca60c8c0, type: 2}
+  green_cauldron: {fileID: 2100000, guid: c6ed1d579e6e4431186110f5f2138843, type: 2}
+  yellow_cauldron: {fileID: 2100000, guid: e6980c4bfaf724657bd56672fa7c81c6, type: 2}
+  pink_cauldron: {fileID: 2100000, guid: 56027b87a935b4f0384ac4b93163cc89, type: 2}
 --- !u!114 &749963589
 MonoBehaviour:
   m_ObjectHideFlags: 0
