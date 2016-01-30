@@ -306,7 +306,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35632c7d66436ef4aa7f7007d6b8712d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedMaterial: {fileID: 2100000, guid: a84718f2dc713414eadcb4164fc5c5c9, type: 2}
 --- !u!23 &345820257
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -449,7 +448,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35632c7d66436ef4aa7f7007d6b8712d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedMaterial: {fileID: 2100000, guid: a84718f2dc713414eadcb4164fc5c5c9, type: 2}
 --- !u!23 &1140262645
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -507,6 +505,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1312581435}
   m_RootOrder: 1
+--- !u!1 &1169941733 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 149898, guid: e8830997f6715aa4db78519b7a9b3b69, type: 2}
+  m_PrefabInternal: {fileID: 969234848}
+--- !u!114 &1169941739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1169941733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6afd3f64ee601a0429d6d370f92c5d18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzle: {fileID: 2013861984}
 --- !u!1 &1312581434
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,7 +595,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35632c7d66436ef4aa7f7007d6b8712d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedMaterial: {fileID: 2100000, guid: a84718f2dc713414eadcb4164fc5c5c9, type: 2}
 --- !u!23 &1607921961
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -804,6 +817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf228e6e2ba53884699a7502a066b62c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LevelComplete: 0
   LevelTime: 5
 --- !u!1 &2102710276
 GameObject:
@@ -848,7 +862,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35632c7d66436ef4aa7f7007d6b8712d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedMaterial: {fileID: 2100000, guid: a84718f2dc713414eadcb4164fc5c5c9, type: 2}
 --- !u!23 &2102710279
 MeshRenderer:
   m_ObjectHideFlags: 0
