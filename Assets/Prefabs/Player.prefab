@@ -87,7 +87,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &179084
 GameObject:
   m_ObjectHideFlags: 1
@@ -103,7 +103,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &180852
 GameObject:
   m_ObjectHideFlags: 1
@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1d293da307a9e2489587f1ce30d57d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextRoom: BottleRoom
+  NextRoom: Bedroom
 --- !u!114 &11446072
 MonoBehaviour:
   m_ObjectHideFlags: 1
