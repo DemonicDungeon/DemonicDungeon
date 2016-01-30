@@ -5,12 +5,26 @@ public class CorridorPuzzle : MonoBehaviour {
     private RoomScript room;
     private DialogSystem dialog;
 
+    public int LevelTime;
+
+    void TimesUp() {
+        //room.Death()
+        dialog.ShowText("NOOO! The Ghost got me!");
+    }
+
+    public void Success() {
+        CancelInvoke("TimesUp");
+        dialog.ShowText("Woohoo! The Ghost is gone!!");
+    }
+
     void CastSpell(GameState.SpellType spell) {
         
-        if ((int)spell == (int)GameState.GhostBodyColor) {
-            dialog.ShowText("The spell seems to be working!");
+        if (spell == GameState.CorrectSpell) {
+            dialog.ShowText("Yes! The Ghost is hurt!");
+            FindObjectOfType<Ghost>().SpellHit();
         } else {
-            dialog.ShowText("The ghost is enraged, it seems to be moving faster!");
+            dialog.ShowText("No! The Ghost is growing in strength!");
+            FindObjectOfType<Ghost>().SpellMiss();
         }
     }
 
@@ -18,7 +32,7 @@ public class CorridorPuzzle : MonoBehaviour {
     void Start () {
         room = FindObjectOfType<RoomScript>();
         dialog = FindObjectOfType<DialogSystem>();
+
+        Invoke("TimesUp", LevelTime);
     }
-	
-	
 }

@@ -110,7 +110,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 11418653}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.16, y: 0.06, z: -0.01}
+  m_LocalPosition: {x: -0.16, y: 0.06, z: -0.17}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 2140857598}
@@ -359,11 +359,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 345820254}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.714, y: 0.026, z: -1.001}
+  m_LocalPosition: {x: 1.2535427, y: -0.72033143, z: -3.277647}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 1312581435}
+  m_RootOrder: 2
 --- !u!1001 &969234848
 Prefab:
   m_ObjectHideFlags: 0
@@ -502,11 +502,42 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1140262642}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.165, y: 0.026, z: -1.001}
+  m_LocalPosition: {x: -1.6254573, y: -0.72033143, z: -3.277647}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+  m_Father: {fileID: 1312581435}
+  m_RootOrder: 1
+--- !u!1 &1312581434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1312581435}
+  m_Layer: 0
+  m_Name: Spells
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1312581435
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1312581434}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5395427, y: 0.36033142, z: 2.276647}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1607921964}
+  - {fileID: 1140262648}
+  - {fileID: 345820260}
+  - {fileID: 2102710282}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!1 &1607921958
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,11 +634,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1607921958}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.32, y: 0.026, z: -1.001}
+  m_LocalPosition: {x: -2.7804573, y: -0.72033143, z: -3.277647}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 1312581435}
+  m_RootOrder: 0
 --- !u!1 &1872086582
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,7 +650,6 @@ GameObject:
   - 33: {fileID: 1872086586}
   - 64: {fileID: 1872086585}
   - 23: {fileID: 1872086584}
-  - 114: {fileID: 1872086587}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -684,21 +714,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1872086582}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1872086587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1872086582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 686995652ddd29e469889e37d7cd7da7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  greenGhost: {fileID: 2100000, guid: d774b88440dccaa4ca2a9fe98e92ad1f, type: 2}
-  redGhost: {fileID: 2100000, guid: e3dd0e1e8a8f74b4ab0e3b7f4d507f66, type: 2}
-  pinkGhost: {fileID: 2100000, guid: fcf72ea2676c06f43af0952df2ca2b39, type: 2}
-  yellowGhost: {fileID: 2100000, guid: b06277905b3bfe647a7ca01dafcd3e75, type: 2}
 --- !u!1 &1920660889
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,7 +739,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1920660889}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.16, y: 0.060000002, z: -0.01}
+  m_LocalPosition: {x: 0.16, y: 0.060000002, z: -0.17}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 2140857598}
@@ -789,6 +804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf228e6e2ba53884699a7502a066b62c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LevelTime: 5
 --- !u!1 &2102710276
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,11 +901,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2102710276}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.906, y: 0.026, z: -1.001}
+  m_LocalPosition: {x: 2.4455428, y: -0.72033143, z: -3.277647}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 1312581435}
+  m_RootOrder: 3
 --- !u!1 &2140857597
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,6 +914,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2140857598}
+  - 114: {fileID: 2140857599}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -912,7 +929,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2140857597}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.88, y: 0.7021001, z: 1.63}
+  m_LocalPosition: {x: 3.02, y: 0.7021001, z: 1.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1872086583}
@@ -920,3 +937,27 @@ Transform:
   - {fileID: 1920660890}
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!114 &2140857599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2140857597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686995652ddd29e469889e37d7cd7da7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  greenBody: {fileID: 2100000, guid: d774b88440dccaa4ca2a9fe98e92ad1f, type: 2}
+  redBody: {fileID: 2100000, guid: e3dd0e1e8a8f74b4ab0e3b7f4d507f66, type: 2}
+  pinkBody: {fileID: 2100000, guid: fcf72ea2676c06f43af0952df2ca2b39, type: 2}
+  yellowBody: {fileID: 2100000, guid: b06277905b3bfe647a7ca01dafcd3e75, type: 2}
+  greenEye: {fileID: 2100000, guid: 46ac61f7cc40126489fcf9c2b1b6e252, type: 2}
+  redEye: {fileID: 2100000, guid: ed632650f6b444144a377b71e2c27fef, type: 2}
+  pinkEye: {fileID: 2100000, guid: 6b1f62316071487418d93972985a3826, type: 2}
+  yellowEye: {fileID: 2100000, guid: 2724e3b5f0d8fa241bb7c6a770807928, type: 2}
+  bodyRenderer: {fileID: 1872086584}
+  leftEyeRenderer: {fileID: 11418655}
+  rightEyeRenderer: {fileID: 1920660891}
+  GhostLives: 2
+  spells: {fileID: 1312581434}
