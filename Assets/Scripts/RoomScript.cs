@@ -17,9 +17,13 @@ public class RoomScript : MonoBehaviour {
     }
 
     public void Death() {
-        Application.Quit();
+        animator.SetTrigger("Death");
     }
-    
+
+    public void LoadMainMenu() {
+        SceneManager.LoadScene(0);
+    }
+
 
     void Start () {
         animator = FindObjectOfType<Animator>();
