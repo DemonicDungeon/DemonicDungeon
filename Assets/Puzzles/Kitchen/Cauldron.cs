@@ -15,13 +15,16 @@ public class Cauldron : MonoBehaviour {
 		dialog.ShowText ("You don't have all ingredients");
 	}
 
+	private int get_fumes_count() {
+		return System.Enum.GetNames (typeof(GameState.FumesColor)).Length;
+	}
+
 	// Use this for initialization
 	void Start () {
 		dialog = FindObjectOfType<DialogSystem> ();
 		renderer = GetComponent<MeshRenderer> ();
 
-		//renderer.material = Material_all[GameState.Fumes);
-
+		GameState.Fumes = (GameState.FumesColor) Random.Range (0, get_fumes_count());
 		switch (GameState.Fumes)
 		{
 		case GameState.FumesColor.Red:

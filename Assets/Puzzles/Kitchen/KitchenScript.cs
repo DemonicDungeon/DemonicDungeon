@@ -4,6 +4,11 @@ using System.Collections;
 public class KitchenScript : MonoBehaviour {
 
 	private DialogSystem dialog;
+
+	private int get_total_ingridients_count() {
+		return System.Enum.GetNames(typeof(GameState.Ingridients)).Length;
+	}
+
 	// Use this for initialization
 	void Start () {
 		dialog = FindObjectOfType<DialogSystem> ();
@@ -12,8 +17,8 @@ public class KitchenScript : MonoBehaviour {
 		int ingridient1_hide = -1;
 		int ingridient2_hide = -1;
 		while (ingridient1_hide == ingridient2_hide) {
-			ingridient1_hide = Random.Range (0, 5);
-			ingridient2_hide = Random.Range (0, 5);
+			ingridient1_hide = Random.Range (0, get_total_ingridients_count());
+			ingridient2_hide = Random.Range (0, get_total_ingridients_count());
 		}
 
 		hide_ingridient (ingridient1_hide);
