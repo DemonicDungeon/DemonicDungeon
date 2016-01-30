@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DoNotUnload : MonoBehaviour {
+public class MusicScript : MonoBehaviour {
 
     public static bool loaded;
 
