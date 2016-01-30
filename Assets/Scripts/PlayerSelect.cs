@@ -31,9 +31,10 @@ public class PlayerSelect : MonoBehaviour {
         if (Physics.Raycast(ray, out hit, range)) {
 
             SelectableObject selected = hit.collider.GetComponent<SelectableObject>();
-            if (selected != null && selected != LastSelected) {
+            if (selected != LastSelected) {
                 Unselect();
-                selected.Select();
+                if (selected != null)
+                    selected.Select();
                 LastSelected = selected;
             }
 
