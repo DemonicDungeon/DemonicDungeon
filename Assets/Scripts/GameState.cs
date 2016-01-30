@@ -32,12 +32,19 @@ public class GameState {
         Green,
         Yellow,
         Pink,
-        Red
+        Red,
+        NumColors
     }
 
+    public enum SpellType {
+        Earth,
+        Wind,
+        Water,
+        Fire
+    }
 
     public static Drink HadDrink = Drink.Wine;
     public static TimeOfDay Time = TimeOfDay.Night;
     public static FumesColor Fumes = FumesColor.Green;
-    public static GhostColor GhostBodyColor = GhostColor.Pink;
+    public static GhostColor GhostBodyColor = GhostColor.NumColors;
 }
