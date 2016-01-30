@@ -8,7 +8,7 @@ public class KitchenScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		dialog = FindObjectOfType<DialogSystem> ();
-		Invoke ("Intro", 2);
+		Intro ();
 	
 	}
 
