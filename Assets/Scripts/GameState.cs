@@ -35,6 +35,14 @@ public class GameState {
         Red
     }
 
+    public enum Ingridients {
+        Ananas,
+        Bone,
+        Pill,
+        Plant,
+        RedFlask
+    }
+
 
     public static Drink HadDrink = Drink.Wine;
     public static TimeOfDay Time = TimeOfDay.Night;
