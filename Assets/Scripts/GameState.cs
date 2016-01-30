@@ -11,5 +11,33 @@ public class GameState {
         BatBlood
     }
 
+    public enum Candles {
+        Lit,
+        NotLit
+    }
+
+    public enum TimeOfDay {
+        Day,
+        Night
+    }
+
+    public enum FumesColor {
+        Red,
+        Blue,
+        Orange,
+        Green
+    }
+
+    public enum GhostColor {
+        Green,
+        Yellow,
+        Pink,
+        Red
+    }
+
+
     public static Drink HadDrink = Drink.Wine;
+    public static TimeOfDay Time = TimeOfDay.Night;
+    public static FumesColor Fumes = FumesColor.Green;
+    public static GhostColor GhostBodyColor = GhostColor.Pink;
 }
