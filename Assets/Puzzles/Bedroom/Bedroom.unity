@@ -448,22 +448,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 170462, guid: e34790551f9515b479590dcc4221d53b, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 179084, guid: e34790551f9515b479590dcc4221d53b, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11438728, guid: e34790551f9515b479590dcc4221d53b, type: 2}
-      propertyPath: NextRoom
-      value: Kitchen
-      objectReference: {fileID: 0}
-    - target: {fileID: 11424638, guid: e34790551f9515b479590dcc4221d53b, type: 2}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e34790551f9515b479590dcc4221d53b, type: 2}
   m_IsPrefabParent: 0
