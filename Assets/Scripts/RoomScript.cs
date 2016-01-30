@@ -20,7 +20,7 @@ public class RoomScript : MonoBehaviour {
         Application.Quit();
     }
     
-    // Use this for initialization
+
     void Start () {
         animator = FindObjectOfType<Animator>();
 	}
