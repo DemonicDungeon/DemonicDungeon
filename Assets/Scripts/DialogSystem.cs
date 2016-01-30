@@ -6,6 +6,8 @@ public class DialogSystem : MonoBehaviour {
 
     public Text dialog;
 
+    public AudioSource sound;
+
     private string currentText;
     private string goalText;
 
@@ -24,6 +26,7 @@ public class DialogSystem : MonoBehaviour {
             return;
         currentText += goalText[currentText.Length];
         dialog.text = currentText;
+        sound.Play();
         Invoke("IterateText", textFrequency);
     }
 
