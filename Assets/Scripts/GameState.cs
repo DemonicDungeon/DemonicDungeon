@@ -23,9 +23,9 @@ public class GameState {
 
     public enum FumesColor {
         Red,
-        Blue,
-        Orange,
-        Green
+        Green,
+        Yellow,
+        Pink
     }
 
     public enum GhostColor {
@@ -35,9 +35,17 @@ public class GameState {
         Red
     }
 
+    public enum Ingridients {
+        Ananas,
+        Bone,
+        Pill,
+        Plant,
+        RedFlask
+    }
+
 
     public static Drink HadDrink = Drink.Wine;
     public static TimeOfDay Time = TimeOfDay.Night;
-    public static FumesColor Fumes = FumesColor.Green;
+    public static FumesColor Fumes = FumesColor.Pink;
     public static GhostColor GhostBodyColor = GhostColor.Pink;
 }
