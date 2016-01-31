@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Linq;
 
 public class GameState {
 
@@ -51,6 +52,7 @@ public class GameState {
     }
 
 
+    public static Candles CandleLit = Candles.NotLit;
     public static Drink HadDrink = Drink.Wine;
     public static TimeOfDay Time = TimeOfDay.Night;
     public static FumesColor Fumes = FumesColor.Green;
@@ -61,7 +63,12 @@ public class GameState {
 
     public static float GhostSpeed = 6;
 
-    public static int[] ActiveSymbols = new int[] { 2, 4, 5, 3, 1 };
-    public static int[] CorrectSymbols = new int[] { 2, 4, 5 };
+    public static int[] ActiveSymbols = new int[] {9, 3, 2, 0, 5};
+    public static int[] CorrectSymbols = new int[] {9, 3, 2, 0, 5 };
+
+    public static void RandomizeGame() {
+        Random rnd = new Random();
+        ActiveSymbols = ActiveSymbols.OrderBy(x => Random.value).ToArray();
+    }
 
 }

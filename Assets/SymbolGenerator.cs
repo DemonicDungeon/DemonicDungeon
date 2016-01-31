@@ -16,7 +16,9 @@ public class SymbolGenerator : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        //GameState.RandomizeGame();
         GenerateSymbols();
+
     }
 	
 	// Update is called once per frame
