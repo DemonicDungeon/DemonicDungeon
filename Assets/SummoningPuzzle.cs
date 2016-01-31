@@ -56,7 +56,24 @@ public class SummoningPuzzle : MonoBehaviour {
         room = FindObjectOfType<RoomScript>();
 
         Invoke("Death", 60);
+
+        StartCoroutine(Story());
+       
     }
+
+    IEnumerator Story() {
+        yield return new WaitForSeconds(1f);
+        dialog.ShowText("Wow! So I really summoned a dark entity.");
+
+        yield return new WaitForSeconds(6f);
+        dialog.ShowText("So many years trying to spell the correct words with little success and I managed to do it when I was drunk.");
+
+        yield return new WaitForSeconds(11f);
+        dialog.ShowText("Now I don’t know how to banish it. No worries!");
+        yield return new WaitForSeconds(6f);
+        dialog.ShowText("It’s just a matter of time, it’s not like there will come any ghost to posses my soul, right?");
+    }
+    
 
     public void Death() {
         room.Death();
