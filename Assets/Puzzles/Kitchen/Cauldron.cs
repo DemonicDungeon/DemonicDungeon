@@ -3,8 +3,10 @@ using System.Collections;
 
 public class Cauldron : MonoBehaviour {
 	private DialogSystem dialog;
-
 	private MeshRenderer renderer;
+	private RoomScript room;
+
+	private KitchenScript puzzle;
 
 	public Material red_cauldron;
 	public Material green_cauldron;
@@ -12,7 +14,11 @@ public class Cauldron : MonoBehaviour {
 	public Material pink_cauldron;
 
 	public void Interact() {
-		dialog.ShowText ("You don't have all ingredients");
+		if (puzzle.is_complete ()) {
+			room.GoToNextLevel ();
+		} else {
+			dialog.ShowText ("I don't have all ingredients. It might kill me drinking this");
+		}
 	}
 
 	private int get_fumes_count() {
@@ -23,6 +29,8 @@ public class Cauldron : MonoBehaviour {
 	void Start () {
 		dialog = FindObjectOfType<DialogSystem> ();
 		renderer = GetComponent<MeshRenderer> ();
+		puzzle = FindObjectOfType<KitchenScript> ();
+		room = FindObjectOfType<RoomScript> ();
 
 		GameState.Fumes = (GameState.FumesColor) Random.Range (0, get_fumes_count());
 		switch (GameState.Fumes)
@@ -44,7 +52,7 @@ public class Cauldron : MonoBehaviour {
 			renderer.material = pink_cauldron;
 			break;
 		default:
-			dialog.ShowText ("You cannot understand the color of the fumes");
+			dialog.ShowText ("You're  cannot understand the color of the fumes");
 			break;
 		}
 	}
