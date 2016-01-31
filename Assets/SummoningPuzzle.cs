@@ -6,12 +6,16 @@ public class SummoningPuzzle : MonoBehaviour {
 
     public List<int> pressedSymbols = new List<int>();
 
+    public ParticleSystem explodeSystem;
+
     public void PressSymbol(int i) {
 
         Debug.Log("Click rune " + i);
         pressedSymbols.Add(i);
-        if (!isCorrectList())
+        if (!isCorrectList()) {
             room.Death();
+            explodeSystem.Emit(50);
+        }
 
         if (isFinishedList())
             Debug.Log("Win");

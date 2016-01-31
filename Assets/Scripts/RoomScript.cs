@@ -24,6 +24,10 @@ public class RoomScript : MonoBehaviour {
         SceneManager.LoadScene(0);
     }
 
+    public void Win() {
+        animator.SetTrigger("Win");
+    }
+
 
     void Start () {
         animator = FindObjectOfType<Animator>();
