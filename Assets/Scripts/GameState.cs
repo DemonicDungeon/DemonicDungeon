@@ -60,4 +60,8 @@ public class GameState {
     public static SpellType CorrectSpell = SpellType.Earth;
 
     public static float GhostSpeed = 6;
+
+    public static int[] ActiveSymbols = new int[] { 2, 4, 5, 3, 1 };
+    public static int[] CorrectSymbols = new int[] { 2, 4, 5 };
+
 }
