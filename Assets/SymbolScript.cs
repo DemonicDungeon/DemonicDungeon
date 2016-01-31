@@ -21,5 +21,6 @@ public class SymbolScript : MonoBehaviour {
         Explode.Emit(30);
         back.gameObject.SetActive(false);
         GetComponent<Renderer>().enabled = false;
+        GetComponent<MeshCollider>().enabled = false;
     }
 }
