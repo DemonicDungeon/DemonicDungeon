@@ -818,7 +818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelComplete: 0
-  LevelTime: 5
+  LevelTime: 50
 --- !u!1 &2102710276
 GameObject:
   m_ObjectHideFlags: 0
@@ -961,16 +961,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 686995652ddd29e469889e37d7cd7da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  greenBody: {fileID: 2100000, guid: d774b88440dccaa4ca2a9fe98e92ad1f, type: 2}
+  GhostSpeed: 0
+  spells: {fileID: 1312581434}
   redBody: {fileID: 2100000, guid: e3dd0e1e8a8f74b4ab0e3b7f4d507f66, type: 2}
   pinkBody: {fileID: 2100000, guid: fcf72ea2676c06f43af0952df2ca2b39, type: 2}
+  greenBody: {fileID: 2100000, guid: d774b88440dccaa4ca2a9fe98e92ad1f, type: 2}
   yellowBody: {fileID: 2100000, guid: b06277905b3bfe647a7ca01dafcd3e75, type: 2}
-  greenEye: {fileID: 2100000, guid: 46ac61f7cc40126489fcf9c2b1b6e252, type: 2}
   redEye: {fileID: 2100000, guid: ed632650f6b444144a377b71e2c27fef, type: 2}
   pinkEye: {fileID: 2100000, guid: 6b1f62316071487418d93972985a3826, type: 2}
+  greenEye: {fileID: 2100000, guid: 46ac61f7cc40126489fcf9c2b1b6e252, type: 2}
   yellowEye: {fileID: 2100000, guid: 2724e3b5f0d8fa241bb7c6a770807928, type: 2}
   bodyRenderer: {fileID: 1872086584}
   leftEyeRenderer: {fileID: 11418655}
   rightEyeRenderer: {fileID: 1920660891}
-  GhostLives: 2
-  spells: {fileID: 1312581434}

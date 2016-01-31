@@ -9,7 +9,6 @@ public class CorridorPuzzle : MonoBehaviour {
 
     void TimesUp() {
         room.Death();
-        //dialog.ShowText("NOOO! The Ghost got me!");
     }
 
     public void Success() {
@@ -24,7 +23,7 @@ public class CorridorPuzzle : MonoBehaviour {
             dialog.ShowText("Yes! The Ghost is hurt!");
             FindObjectOfType<Ghost>().SpellHit();
         } else {
-            dialog.ShowText("No! The Ghost is growing in strength!");
+            dialog.ShowText("Oh no! The Ghost changed colors!");
             FindObjectOfType<Ghost>().SpellMiss();
         }
     }
