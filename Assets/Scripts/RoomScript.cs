@@ -17,11 +17,16 @@ public class RoomScript : MonoBehaviour {
     }
 
     public void Death() {
+        Debug.Log("DEATH!");
         animator.SetTrigger("Death");
     }
 
     public void LoadMainMenu() {
         SceneManager.LoadScene(0);
+    }
+
+    public void Win() {
+        animator.SetTrigger("Win");
     }
 
 

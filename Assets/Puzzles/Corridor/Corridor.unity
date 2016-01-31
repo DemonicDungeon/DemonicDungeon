@@ -160,6 +160,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 11418653}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &12316448 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 167214, guid: e8830997f6715aa4db78519b7a9b3b69, type: 2}
+  m_PrefabInternal: {fileID: 969234848}
+--- !u!114 &12316450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 12316448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6afd3f64ee601a0429d6d370f92c5d18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzle: {fileID: 2013861984}
 --- !u!1 &105863143
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,6 +275,10 @@ Prefab:
     - target: {fileID: 413048, guid: e34790551f9515b479590dcc4221d53b, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11438728, guid: e34790551f9515b479590dcc4221d53b, type: 2}
+      propertyPath: NextRoom
+      value: SummoningRoom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e34790551f9515b479590dcc4221d53b, type: 2}
@@ -402,7 +422,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11488584, guid: e8830997f6715aa4db78519b7a9b3b69, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e8830997f6715aa4db78519b7a9b3b69, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1140262642
@@ -505,22 +526,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1312581435}
   m_RootOrder: 1
---- !u!1 &1169941733 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 149898, guid: e8830997f6715aa4db78519b7a9b3b69, type: 2}
-  m_PrefabInternal: {fileID: 969234848}
---- !u!114 &1169941739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1169941733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6afd3f64ee601a0429d6d370f92c5d18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  puzzle: {fileID: 2013861984}
 --- !u!1 &1312581434
 GameObject:
   m_ObjectHideFlags: 0

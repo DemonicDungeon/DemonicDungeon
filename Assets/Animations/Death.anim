@@ -120,8 +120,13 @@ AnimationClip:
         tangentMode: 10
       - time: 2.85
         value: 0
-        inSlope: -0.48666668
-        outSlope: -0.48666668
+        inSlope: -0.24333334
+        outSlope: -0.24333334
+        tangentMode: 10
+      - time: 3.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -143,6 +148,11 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 10
+      - time: 3.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -159,6 +169,11 @@ AnimationClip:
         outSlope: 0
         tangentMode: 10
       - time: 2.85
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 3.5
         value: 0
         inSlope: 0
         outSlope: 0
@@ -277,7 +292,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 3.05
+    m_StopTime: 3.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -533,8 +548,13 @@ AnimationClip:
         tangentMode: 10
       - time: 2.85
         value: 0
-        inSlope: -0.48666668
-        outSlope: -0.48666668
+        inSlope: -0.24333334
+        outSlope: -0.24333334
+        tangentMode: 10
+      - time: 3.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -556,6 +576,11 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 10
+      - time: 3.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -572,6 +597,11 @@ AnimationClip:
         outSlope: 0
         tangentMode: 10
       - time: 2.85
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 3.5
         value: 0
         inSlope: 0
         outSlope: 0
