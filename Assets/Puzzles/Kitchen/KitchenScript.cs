@@ -150,16 +150,14 @@ public class KitchenScript : MonoBehaviour {
 			return false;
 		}
 
-		Debug.Log (string.Format("Ingr_id {0:00}, Drink: {1:00}, Fumes: {2:00}", ingr, drink, fumes));
+		Debug.Log (string.Format("Ingr_id {0}, Drink: {1}, Fumes: {2}", ingr.ToString(), drink.ToString(), fumes.ToString()));
 
 		return false;
 	}
 
 	public void IngridientSelected(CauldronIngredient obj) {
-		Debug.Log (obj);
 		GameState.Ingridients obj_ingr = (GameState.Ingridients) System.Enum.Parse (typeof(GameState.Ingridients), obj.name, true);
 		if (ingridient_is_correct (obj_ingr, GameState.HadDrink, GameState.Fumes)) {
-			Debug.Log ("It was a correct thing to add");
 			dialog.ShowText ("Mmm! Let's drink this baby now!");
 			LevelComplete = true;
 		} else {
