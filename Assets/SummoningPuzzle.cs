@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 public class SummoningPuzzle : MonoBehaviour {
 
+    bool Dead = false;
+
     public List<int> pressedSymbols = new List<int>();
 
     public ParticleSystem explodeSystem;
@@ -11,6 +13,9 @@ public class SummoningPuzzle : MonoBehaviour {
     public GameObject pentagram;
 
     public void PressSymbol(int i) {
+
+        if (Dead)
+            return;
 
         Debug.Log("Click rune " + i);
         pressedSymbols.Add(i);
@@ -20,6 +25,7 @@ public class SummoningPuzzle : MonoBehaviour {
         }
 
         if (isFinishedList()) {
+            CancelInvoke();
             room.Win();
             pentagram.SetActive(false);
         }
@@ -48,6 +54,13 @@ public class SummoningPuzzle : MonoBehaviour {
     void Start() {
         dialog = FindObjectOfType<DialogSystem>();
         room = FindObjectOfType<RoomScript>();
+
+        Invoke("Death", 60);
+    }
+
+    public void Death() {
+        room.Death();
+        Dead = true;
     }
 
 }
