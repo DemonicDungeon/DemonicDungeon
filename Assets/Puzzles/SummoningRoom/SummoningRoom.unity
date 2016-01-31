@@ -114,6 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressedSymbols: 
   explodeSystem: {fileID: 1296570607}
+  pentagram: {fileID: 1209766826}
 --- !u!4 &338243500
 Transform:
   m_ObjectHideFlags: 0
@@ -349,18 +350,6 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 413048, guid: e34790551f9515b479590dcc4221d53b, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 413048, guid: e34790551f9515b479590dcc4221d53b, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 413048, guid: e34790551f9515b479590dcc4221d53b, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 413048, guid: e34790551f9515b479590dcc4221d53b, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -384,6 +373,10 @@ Prefab:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 0ffbc067ce2f16f4db1ecfc6dd3bef4a, type: 3}
+    - target: {fileID: 413048, guid: e34790551f9515b479590dcc4221d53b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e34790551f9515b479590dcc4221d53b, type: 2}
   m_IsPrefabParent: 0
@@ -555,6 +548,7 @@ GameObject:
   - 4: {fileID: 1296570605}
   - 198: {fileID: 1296570607}
   - 199: {fileID: 1296570606}
+  - 108: {fileID: 1296570608}
   m_Layer: 0
   m_Name: Explode
   m_TagString: Untagged
@@ -2104,6 +2098,39 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
+--- !u!108 &1296570608
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1296570604}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 2
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 2.86
+  m_Range: 10.4
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1001 &1358077967
 Prefab:
   m_ObjectHideFlags: 0

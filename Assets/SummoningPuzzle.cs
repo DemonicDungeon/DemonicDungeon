@@ -8,6 +8,8 @@ public class SummoningPuzzle : MonoBehaviour {
 
     public ParticleSystem explodeSystem;
 
+    public GameObject pentagram;
+
     public void PressSymbol(int i) {
 
         Debug.Log("Click rune " + i);
@@ -17,8 +19,10 @@ public class SummoningPuzzle : MonoBehaviour {
             explodeSystem.Emit(50);
         }
 
-        if (isFinishedList())
-            Debug.Log("Win");
+        if (isFinishedList()) {
+            room.Win();
+            pentagram.SetActive(false);
+        }
     }
 
     public bool isCorrectList() {
