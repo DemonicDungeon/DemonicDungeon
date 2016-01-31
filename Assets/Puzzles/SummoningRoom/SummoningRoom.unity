@@ -350,6 +350,18 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 413048, guid: e34790551f9515b479590dcc4221d53b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413048, guid: e34790551f9515b479590dcc4221d53b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413048, guid: e34790551f9515b479590dcc4221d53b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413048, guid: e34790551f9515b479590dcc4221d53b, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -369,12 +381,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 8260216, guid: e34790551f9515b479590dcc4221d53b, type: 2}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 0ffbc067ce2f16f4db1ecfc6dd3bef4a, type: 3}
-    - target: {fileID: 413048, guid: e34790551f9515b479590dcc4221d53b, type: 2}
-      propertyPath: m_LocalPosition.x
+    - target: {fileID: 161894, guid: e34790551f9515b479590dcc4221d53b, type: 2}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
