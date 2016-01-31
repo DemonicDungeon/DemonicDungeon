@@ -451,7 +451,19 @@ Prefab:
     - target: {fileID: 8260216, guid: e34790551f9515b479590dcc4221d53b, type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 0ffbc067ce2f16f4db1ecfc6dd3bef4a, type: 3}
+      objectReference: {fileID: 8300000, guid: 607d1a77c01fcc0479375e8caf5811cd, type: 3}
+    - target: {fileID: 11438728, guid: e34790551f9515b479590dcc4221d53b, type: 2}
+      propertyPath: NextRoom
+      value: Kitchen
+      objectReference: {fileID: 0}
+    - target: {fileID: 11431340, guid: e34790551f9515b479590dcc4221d53b, type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11406892, guid: e34790551f9515b479590dcc4221d53b, type: 2}
+      propertyPath: textFrequency
+      value: 0.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e34790551f9515b479590dcc4221d53b, type: 2}
   m_IsPrefabParent: 0

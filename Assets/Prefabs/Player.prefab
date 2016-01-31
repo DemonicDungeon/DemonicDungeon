@@ -362,7 +362,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0ffbc067ce2f16f4db1ecfc6dd3bef4a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 607d1a77c01fcc0479375e8caf5811cd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -645,7 +645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog: {fileID: 11431340}
   sound: {fileID: 8260216}
-  textFrequency: 0.075
+  textFrequency: 0.05
 --- !u!114 &11424598
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -742,7 +742,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: asdasd
+  m_Text: 
 --- !u!114 &11438728
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -754,7 +754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1d293da307a9e2489587f1ce30d57d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextRoom: SummoningRoom
+  NextRoom: Kichen
 --- !u!114 &11446072
 MonoBehaviour:
   m_ObjectHideFlags: 1
