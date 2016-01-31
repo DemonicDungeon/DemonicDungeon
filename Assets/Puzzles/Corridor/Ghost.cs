@@ -17,6 +17,9 @@ struct MaterialPicker {
 
 public class Ghost : MonoBehaviour {
 
+    public ParticleSystem changeColor;
+    public ParticleSystem spellHit;
+
     private MaterialPicker bodyMaterial;
     private MaterialPicker eyeMaterial;
 
@@ -82,6 +85,8 @@ public class Ghost : MonoBehaviour {
 
     private void ChangeApperance() {
 
+        changeColor.Emit(300);
+
         SwitchMaterial(bodyRenderer, ref GameState.GhostBodyColor, bodyMaterial);
         SwitchMaterial(leftEyeRenderer, ref GameState.GhostLeftEyeColor, eyeMaterial);
         SwitchMaterial(rightEyeRenderer, ref GameState.GhostRightEyeColor, eyeMaterial);
@@ -92,7 +97,10 @@ public class Ghost : MonoBehaviour {
     }
 
     public void SpellHit() {
-        
+
+
+        spellHit.Emit(30) ;
+
         if (currentTarget == GameState.GhostParts.LeftEye) {
             FindObjectOfType<CorridorPuzzle>().Success();
             gameObject.SetActive(false);

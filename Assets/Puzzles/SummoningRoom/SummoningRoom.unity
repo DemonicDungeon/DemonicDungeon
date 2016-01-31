@@ -115,6 +115,7 @@ MonoBehaviour:
   pressedSymbols: 
   explodeSystem: {fileID: 1296570607}
   pentagram: {fileID: 1209766826}
+  PuzzleTime: 120
 --- !u!4 &338243500
 Transform:
   m_ObjectHideFlags: 0

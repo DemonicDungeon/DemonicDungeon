@@ -6,7 +6,6 @@ public class CauldronIngredient : MonoBehaviour {
 	private KitchenScript kitchen;
 
 	void Interact() {
-		dialog.ShowText("You picked up jalapeno powder.");
 		kitchen.IngridientSelected (this);
 		gameObject.SetActive (false);
 	}

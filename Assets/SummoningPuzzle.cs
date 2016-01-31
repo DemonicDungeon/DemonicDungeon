@@ -12,6 +12,8 @@ public class SummoningPuzzle : MonoBehaviour {
 
     public GameObject pentagram;
 
+    public float PuzzleTime;
+
     public void PressSymbol(int i) {
 
         if (Dead)
@@ -55,7 +57,7 @@ public class SummoningPuzzle : MonoBehaviour {
         dialog = FindObjectOfType<DialogSystem>();
         room = FindObjectOfType<RoomScript>();
 
-        Invoke("Death", 60);
+        Invoke("Death", PuzzleTime);
 
         StartCoroutine(Story());
        
