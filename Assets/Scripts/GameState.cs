@@ -45,7 +45,8 @@ public class GameState {
         Earth,
         Air,
         Water,
-        Fire
+        Fire,
+        NumSpells
     }
     public enum Ingridients { // NB must be same as object names in Kitchen scene
         Ananas,
