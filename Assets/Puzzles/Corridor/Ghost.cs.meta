@@ -1,10 +1,22 @@
 fileFormatVersion: 2
 guid: 686995652ddd29e469889e37d7cd7da7
-timeCreated: 1454160768
+timeCreated: 1454242912
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - spells: {instanceID: 0}
+  - redBody: {fileID: 2100000, guid: e3dd0e1e8a8f74b4ab0e3b7f4d507f66, type: 2}
+  - pinkBody: {fileID: 2100000, guid: fcf72ea2676c06f43af0952df2ca2b39, type: 2}
+  - greenBody: {fileID: 2100000, guid: d774b88440dccaa4ca2a9fe98e92ad1f, type: 2}
+  - yellowBody: {fileID: 2100000, guid: b06277905b3bfe647a7ca01dafcd3e75, type: 2}
+  - redEye: {fileID: 2100000, guid: ed632650f6b444144a377b71e2c27fef, type: 2}
+  - pinkEye: {fileID: 2100000, guid: 6b1f62316071487418d93972985a3826, type: 2}
+  - greenEye: {fileID: 2100000, guid: 46ac61f7cc40126489fcf9c2b1b6e252, type: 2}
+  - yellowEye: {fileID: 2100000, guid: 2724e3b5f0d8fa241bb7c6a770807928, type: 2}
+  - bodyRenderer: {instanceID: 0}
+  - leftEyeRenderer: {instanceID: 0}
+  - rightEyeRenderer: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

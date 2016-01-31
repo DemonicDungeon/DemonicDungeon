@@ -29,18 +29,24 @@ public class GameState {
     }
 
     public enum GhostColor {
+        Red,
+        Pink,
         Green,
         Yellow,
-        Pink,
-        Red,
         NumColors
+    }
+    public enum GhostParts {
+        Body,
+        RightEye,
+        LeftEye
     }
 
     public enum SpellType {
         Earth,
-        Wind,
+        Air,
         Water,
-        Fire
+        Fire,
+        NumSpells
     }
     public enum Ingridients { // NB must be same as object names in Kitchen scene
         Ananas,
@@ -59,5 +65,15 @@ public class GameState {
     public static GhostColor GhostRightEyeColor = GhostColor.NumColors;
     public static SpellType CorrectSpell = SpellType.Earth;
 
-    public static float GhostSpeed = 6;
+    public static int[] SpellTable = new int[] {
+        1, 3, 0,
+        0, 0, 3,
+        2, 3, 2,
+        1, 3, 2,
+
+        2, 3, 1,
+        1, 3, 2,
+        0, 0, 2,
+        3, 1, 1
+    };
 }
