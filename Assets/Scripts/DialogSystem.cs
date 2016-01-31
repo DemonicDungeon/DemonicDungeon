@@ -14,6 +14,7 @@ public class DialogSystem : MonoBehaviour {
     public float textFrequency;
 
     public void ShowText(string text) {
+        CancelInvoke();
         dialog.text = "";
         currentText = "";
         goalText = text;
